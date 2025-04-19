@@ -1,0 +1,116 @@
+.third-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(4px); /* Applies the blur */
+    -webkit-backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.third-modal-container {
+    background-color: #1c1c1c;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+}
+
+.third-modal-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.third-modal-input-section {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 1rem;
+}
+
+.third-modal-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #999;
+    background-color: #2a2a2a;
+    color: #fff;
+    border-radius: 10px;
+    outline: none;
+}
+
+.third-modal-authorize-btn {
+    padding: 10px 15px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.third-modal-authorize-btn:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.third-modal-info {
+    text-align: center;
+    color: #aaa;
+    margin-bottom: 1rem;
+}
+
+.third-modal-list {
+    margin-top: 1rem;
+}
+
+.third-modal-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.third-modal-entry {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e2e2e;
+    padding: 8px 12px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.third-modal-address {
+    font-family: monospace;
+    color: #ccc;
+}
+
+.third-modal-revoke-btn {
+    background: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.third-modal-close-btn {
+    margin-top: 1.5rem;
+    background-color: #374151;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.third-modal-close-btn:hover {
+    background-color: #4b5563;
+}

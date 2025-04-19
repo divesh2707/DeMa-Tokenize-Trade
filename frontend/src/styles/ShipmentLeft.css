@@ -1,0 +1,44 @@
+.shipment-left{
+    position: fixed;
+    top:0;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 170px 200px 100px ;
+}
+
+.shipment-section-deadline-title{
+    margin: 0;
+    font-size: 20px;
+    letter-spacing: 5px;
+  }
+
+  .shipment-section-deadline{
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+  }
+
+  .shipment-section-deadline-time{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+   
+.shipment-qr-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    align-items: center;
+    flex-direction: column;
+    gap:10px;
+}
+
+.shipment-qr-label{
+    width: 250px;
+    text-align: center;
+    font-size: 16px;
+}

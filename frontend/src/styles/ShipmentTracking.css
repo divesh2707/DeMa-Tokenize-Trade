@@ -1,0 +1,133 @@
+.shipment-tracking-layout {
+    background: none;
+    margin-top: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .shipment-tracking-placeholder {
+    text-align: center;
+    padding: 0px 40px;
+    background: none;
+    border: 1px solid #ffd591;
+    border-radius: 10px;
+    width: 700px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap:50px;
+  }
+
+  .shipment-tracking-placeholder.pad{
+    padding: 20px 40px;
+  }
+
+  .shipment-tracking-placeholder img{
+    width: 300px;
+    height: 400px;
+    object-position: center;
+    object-fit: contain;
+  }
+  
+  .shipment-tracking-title {
+    font-size: 1.75rem;
+    color: #faad14;
+    margin-bottom: 20px;
+  }
+  
+  .shipment-tracking-message {
+    font-size: 18px;
+    color: #afafaf;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+  }
+  
+  .shipment-tracking-nothing{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap:15px;
+  }
+
+  .shipment-tracking-update{
+    padding: 12px 35px;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid #999;
+    margin-top: 35px;
+    width: 300px;
+    color: white;
+  }
+
+  .shipment-tracking-update:hover{
+    background-color: rgba(107, 106, 106, 0.3);
+  }
+
+
+  .shipment-tracking-activity-log {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: white;
+    background-color: none;
+    padding-right: 190px;
+  }
+  
+  .shipment-tracking-activity-header,
+  .shipment-tracking-activity-row{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 5px 10px;
+    align-items: center;
+  }
+  
+  .shipment-tracking-activity-row{
+    margin-bottom: 10px;
+  }
+  
+  .shipment-tracking-activity-col-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap:10px;
+    font-size: 18px;
+  }
+
+  
+  .shipment-tracking-activity-col-5{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+  }
+  
+  .shipment-tracking-activity-header {
+    color: #868686;
+    border-bottom: 1px solid #363636;
+    font-size: 17px;
+    margin-bottom: 25px;
+  }
+  
+  
+  .shipment-tracking-activity-row a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .shipment-tracking-activity-row a:hover {
+    color: #ff9500;
+  }
+
+  .shipment-tracking-buttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    gap:40px;
+  }

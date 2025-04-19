@@ -1,0 +1,53 @@
+.Loading-item-placeholder-card {
+    width: 240px;
+    height: 350px;
+    background: #1e1e1e; /* Dark card background */
+    border-radius: 12px;
+    padding: 16px;
+    margin: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  /* Shimmer effect with dark-friendly colors */
+  .shimmer-box {
+    background: linear-gradient(
+      to right,
+      #2c2c2c 0%,
+      #3a3a3a 50%,
+      #2c2c2c 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+    border-radius: 8px;
+  }
+  
+  .shimmer-box.image {
+    width: 100%;
+    height: 180px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+  }
+  
+  .shimmer-box.title {
+    width: 85%;
+    height: 30px;
+  }
+  
+  .shimmer-box.subtitle {
+    width: 60%;
+    height: 20px;
+  }
+  
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  

@@ -1,0 +1,120 @@
+.nft-detail-layout{
+  background: linear-gradient(to right bottom, #000000, #321010);
+  display: flex;
+  flex-direction: column;
+}
+
+
+.nft-detail-container {
+  display: flex;
+  flex: 1;
+}
+
+
+.nft-detail-container-media {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    margin-top: 150px;
+    margin-left: 150px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    flex-shrink: 0;
+    overflow: hidden;
+}
+
+.nft-detail-container-media img,
+.nft-detail-container-media video,
+.nft-detail-container-media audio {
+    max-height: 500px;
+    max-width: 500px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+
+.nft-detail-container-content{
+  flex: 1;
+  padding: 150px 90px 0px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin-left: 750px;
+  /* overflow-y: auto; */
+}
+
+.audio-preview-container {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    
+  }
+
+  .nft-detail-container-content::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .nft-detail-container-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+  }
+  
+  .nft-detail-container-content::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  }
+  
+  .nft-detail-container-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  
+  .audio-preview-image {
+    border-radius: 10px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .audio-overlay-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    z-index: 2;
+  }
+  
+  /* Control bar background */
+  .audio-overlay-controls::-webkit-media-controls-enclosure {
+    background-color: rgba(108, 108, 108, 0);
+    border-radius: 30px;
+  }
+  
+  /* Make play/pause icons appear white */
+  .audio-overlay-controls::-webkit-media-controls-play-button,
+  .audio-overlay-controls::-webkit-media-controls-mute-button,
+  .audio-overlay-controls::-webkit-media-controls-volume-slider {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+  }
+  
+  /* Timeline (seek bar) slider */
+  .audio-overlay-controls::-webkit-media-controls-timeline {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+  }
+  
+  /* Current time display */
+  .audio-overlay-controls::-webkit-media-controls-current-time-display,
+  .audio-overlay-controls::-webkit-media-controls-time-remaining-display {
+    color: white !important;
+  }
+  
+  
+  

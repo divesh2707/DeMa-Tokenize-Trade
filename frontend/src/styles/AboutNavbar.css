@@ -1,0 +1,111 @@
+.about-navbar-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    padding: 0 40px;
+    z-index: 1000;
+    backdrop-filter: blur(100px);
+    box-sizing: border-box;
+  }
+
+  .home-navbar-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    padding: 0 40px;
+    z-index: 1000;
+    box-sizing: border-box;
+  }
+
+  .mint-navbar-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 140px;
+    padding: 0 40px;
+    z-index: 100000;
+    backdrop-filter: blur(100px);
+    box-sizing: border-box;
+  }
+  
+  .about-logo {
+    height: 200px;
+    width:200px;
+    object-fit: contain;
+  }
+  
+  /* Center search bar */
+  .navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-search {
+    height: 50px;
+    width: 100%;
+    max-width: 450px;
+    background-color: rgb(51, 50, 50);
+    color: white;
+    border-radius: 30px;
+    padding: 14px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap:20px;
+  }
+  
+  .navbar-search input {
+    border: none;
+    background: transparent;
+    color: white;
+    outline: none;
+  }
+  
+  /* Right side: wallet, balance, profile */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: white;
+  }
+
+  
+  
+  .about-navbar-button {
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 98, 0);
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .about-navbar-profile-balance {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  
+  /* Divider */
+  .navbar-divider {
+    width: 1px;
+    height: 25px;
+    background-color: #666;
+  }
+  

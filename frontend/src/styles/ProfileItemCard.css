@@ -1,0 +1,137 @@
+.profile-item-card {
+    width: 260px;
+    height: 360px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    outline: none;
+    border: 1px solid #3a3a3a;
+    position: relative;
+  }
+  
+  .profile-item-card:hover {
+    transform: translateY(-2px);
+    transform: scale(1.05);
+  }
+  
+  .profile-item-card-image-container {
+    background-color: #1e1e1e;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: none;
+    box-sizing: border-box;
+  }
+  
+  .profile-item-card-image-container img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    background-color: transparent;
+    border: none;
+    display: block;
+  }
+  
+  .profile-item-card-content {
+    padding: 12px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #171719;
+    height: 130px;
+  }
+  
+  .profile-item-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    word-break: break-all;
+    margin:0;
+  }
+  
+  .profile-item-card-description {
+    font-size: 13px;
+    color: #ffffff;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin:0;
+  }
+
+  .profile-item-card-listing{
+    font-size: 13px;
+    color: #afafaf;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .profile-item-card-price{
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 600;
+    margin:0;
+  }
+  
+  .profile-item-card-slide-up-button {
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transition: bottom 0.4s ease;
+    padding: 10px 0;
+  }
+  
+  .profile-item-card.profile-item-card-not-listed:hover .profile-item-card-slide-up-button {
+    bottom: -10px;
+  }
+
+  .profile-item-card:hover .profile-item-card-slide-up-button {
+    bottom: -10px;
+  }
+  
+  .profile-item-card-list-nft-button {
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 260px;
+    font-size: 14px;
+  }
+  
+  .profile-item-card-cancel-nft-button{
+    background-color: #0066ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 260px;
+    font-size: 14px;
+  }
+
+  .profile-item-card-buy-nft-button{
+    background-color: #118c01;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    width: 260px;
+    font-size: 14px;
+  }

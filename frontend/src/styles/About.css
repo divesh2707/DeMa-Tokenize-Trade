@@ -1,0 +1,7 @@
+.about-background{
+    background-image: linear-gradient(to right bottom, rgb(0, 0, 0), rgb(15, 7, 30) );
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}

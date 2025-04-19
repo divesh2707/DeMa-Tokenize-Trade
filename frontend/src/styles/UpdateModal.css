@@ -1,0 +1,101 @@
+.update-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    animation: fadeIn 0.3s ease;
+    backdrop-filter: blur(4px); /* Applies the blur */
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.update-modal-container {
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 16px;
+    padding: 40px;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    animation: slideIn 0.3s ease-out;
+    text-align: center;
+}
+
+.update-modal-container h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.update-modal-container p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.update-modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.update-modal-cancel-button, .update-modal-confirm-button {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.update-modal-cancel-button:hover {
+    background-color: #2a2a2a;
+}
+
+.update-modal-confirm-button {
+    background-color: #ff3b3b;
+    color: white;
+}
+
+.update-confirm-button:hover {
+    background-color: #e62929;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.reject-modal-options{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.reject-modal-option{
+    padding: 8px 20px;
+    border:1px solid #999 ;
+    background: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.reject-modal-option:hover{
+    background-color: rgba(67, 67, 67, 0.3);
+}
+
+.reject-modal-option.selected {
+    background-color: rgba(179, 179, 179, 0.3);
+  }
+  

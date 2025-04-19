@@ -1,0 +1,205 @@
+.profile-background{
+    background: linear-gradient(135deg, #000000, #1a1a1a, #000000);
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-left-right{
+    display: flex;
+    flex: 1;
+}
+
+.profile-left{
+    width: 380px; /* fixed width */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background: transparent;
+    display: flex;
+    justify-content: flex-start;
+    gap:15px;
+    flex-direction: column;
+}
+
+.profile-subHeadings-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0px;
+    flex-grow: 1;
+}
+
+
+.profile-right{
+    margin-left: 410px; /* width of .profile-left */
+    flex: 1;
+    padding-top: 140px;
+    box-sizing: border-box;
+    position: relative; /* required for z-index to work */
+    min-height: 100vh;
+    padding-bottom: 20px;
+}
+
+.profile-right::-webkit-scrollbar {
+    width: 8px;
+}
+
+.profile-right::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+.profile-right::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    background-clip: content-box;
+}
+
+.profile-right::-webkit-scrollbar-thumb:hover {
+    background-color: #ccc;
+}
+
+
+
+.profile-heading{
+    padding-top: 150px;
+    padding-left: 50px;
+    display: flex;
+    gap:15px;
+    align-items: center;
+}
+
+.profile-heading p{
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 12px;
+}
+
+.profile-avatar{
+    width: 60px;
+    height:60px;
+    object-fit: cover;
+}
+
+.profile-subHeadings{
+    display: flex;
+    margin-left: 50px;
+    align-items: center;
+    gap:40px;
+}
+
+.profile-subHeadings-items{
+    padding: 5px;
+    border-bottom: 2px solid transparent;
+    color: #888;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.profile-subHeadings-items:hover{
+    color:white;
+}
+
+.profile-subHeadings-items.active{
+    color: white;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.profile-subitems-body{
+    /* margin-left: 80px;
+    margin-right: 80px; */
+}
+
+.profile-body-nothing{
+    position: relative;
+}
+
+.profile-body-nothing img{
+    position: absolute;
+    top:130px;
+    left:410px;
+    width:300px;
+    height:200px;
+}
+
+.profile-body-nothing h1{
+    position: absolute;
+    top:335px;
+    left:430px;
+    color: white;
+    font-size: 35px;
+}
+
+.shipment-status-button{
+    background: none;
+    border: 1px solid #999;
+    padding:10px 30px;
+    border-radius: 10px;
+    color: white;
+    margin: 10px 50px 15px 50px;
+    width: 310px;
+    font-size: 15px;
+    outline: none;
+}
+
+.shipment-status-button:hover{
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+.shipment-status-button.activeStatus{
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+.profile-body-nothing button{
+    position: absolute;
+    top:395px;
+    left:465px;
+    border-radius: 10px;
+    padding: 8px 30px;
+    background: rgba(31, 32, 34, 0.5);
+    border: 1px solid #5a5959;
+    outline: none;
+    color: white;
+}
+
+.profile-body-nothing button:hover{
+    background: rgb(3, 3, 3, 0.3);
+}
+
+.profile-body-items-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap:15px;
+    margin-top: 25px;
+}
+
+.loading-spinner {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .loading-spinner::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    border: 4px solid #ccc;
+    border-top-color: #555;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  

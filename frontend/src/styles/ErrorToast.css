@@ -1,0 +1,35 @@
+/* styles/ErrorToast.css */
+.error-toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #ff3b3b;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    gap: 10px;
+    animation: slideIn 0.4s ease-out, fadeOut 0.4s ease-in 5.6s forwards;
+    z-index: 10000000;
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeOut {
+    to {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+  }
+  

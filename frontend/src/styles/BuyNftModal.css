@@ -1,0 +1,118 @@
+.buy-nft-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999;
+    animation: fadeIn 0.3s ease;
+}
+
+.buy-nft-modal-container {
+    background-color: #1c1c1c;
+    color: white;
+    border-radius: 16px;
+    padding: 40px;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    animation: slideIn 0.3s ease-out;
+    text-align: center;
+}
+
+.buy-nft-modal-container h1 {
+    font-size: 28px;
+    margin-bottom: 16px;
+}
+
+.buy-nft-modal-container p {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.buy-nft-modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.buy-nft-modal-cancel-button, .buy-nft-modal-confirm-button {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.buy-nft-modal-cancel-button {
+    background-color: transparent;
+    border: 1px solid #555;
+    color: #ffffff;
+}
+
+.buy-nft-modal-cancel-button:hover {
+    background-color: #2a2a2a;
+}
+
+.buy-nft-modal-confirm-button {
+    background-color: #ff3b3b;
+    color: white;
+}
+
+.buy-nft-modal-confirm-button:hover {
+    background-color: #e62929;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: scale(0.95); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+.nft-buy-textarea {
+    width: 100%;
+    padding: 0.5rem;
+    
+    border: 1px solid #999;
+    margin-top: 0.5rem;
+    resize: none;
+    outline: none;
+    background: none;
+    color: white;
+    
+    /* Scrollbar styles */
+    scrollbar-width: thin;
+    scroll-padding: 2px;
+    scrollbar-color: #b0b0b0 #333; /* thumb color, track color */
+  }
+  
+  /* For Webkit browsers (Chrome, Safari, Edge) */
+  .nft-buy-textarea::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 10px;
+  }
+  
+  .nft-buy-textarea::-webkit-scrollbar-track {
+    background: #333; /* track color */
+    border-radius: 10px;
+  }
+  
+  .nft-buy-textarea::-webkit-scrollbar-thumb {
+    background-color: #353638; /* thumb color */
+  }
+  
+  .nft-buy-textarea::-webkit-scrollbar-thumb:hover {
+    background-color: #414345; /* thumb color on hover */
+  }
+  

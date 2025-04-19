@@ -1,0 +1,54 @@
+.profile-filter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: none;
+    background: none;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    /* gap:18px; */
+    color: white;
+    font-size: 15px;
+    flex-grow: 1;
+  }
+  
+  .profile-filter-search {
+    border: 1px solid #999;
+    background: none;
+    padding: 10px 30px;
+    border-radius: 8px;
+    width:310px;
+    color: white;
+    outline: none;
+  }
+  
+  .profile-filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .profile-filter-label {
+    font-weight: 500;
+  }
+  
+  .profile-filter-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .profile-filter-button{
+    border: 1px solid #ccc;
+    background: none;
+    padding: 8px 20px;
+    color: white;
+    border-radius: 10px;
+  }
+
+  .profile-filter-button.selected{
+    background-color: rgba(101, 101, 101, 0.3);
+  }
+  
+ 
+

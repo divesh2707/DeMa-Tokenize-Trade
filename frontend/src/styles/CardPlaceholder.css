@@ -1,0 +1,34 @@
+.card-placeholder-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    padding-right: 50px;
+    padding-top: 70px;
+  }
+  
+  .placeholder-card {
+    height: 420px;
+    border: none;
+    border-radius: 20px;
+  }
+  
+  /* Gradient Variants */
+  .gradient-1 {
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(27, 29, 32) );
+  }
+  
+  .gradient-2 {
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(27, 29, 32));
+  }
+  
+  .gradient-3 {
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(27, 29, 32) );
+  }
+  
+  .gradient-4 {
+    background: linear-gradient(to top, rgb(0, 0, 0), rgb(27, 29, 32) );
+  }
+  
+  
+  

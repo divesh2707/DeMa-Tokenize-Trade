@@ -1,0 +1,145 @@
+.activity-navbar-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    width: 100%;
+    height: 120px;
+  }
+
+  
+  .activity-header {
+    color: #a8a8a8;
+    border-bottom: 1px solid #717171;
+    font-size: 14px;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+  }
+  
+  .activity-header-log{
+    display: flex;
+    flex: 1;
+    margin-top: 110px;
+    padding-top: 10px;
+    padding-left: 85px;
+    padding-right: 145px;
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: white;
+    background-color: none;
+    position: fixed;
+    top:0;
+    z-index: 1000;
+    backdrop-filter: blur(100px);
+}
+
+  .activity-navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(100px);
+    box-sizing: border-box;
+    padding: 0 40px;
+    height:230px;
+  }
+
+  .all-activity-filter-container{
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+    align-items: center;
+    margin: 0px 55px 25px 80px;
+    padding: 0;
+}
+
+.all-activity-filter-button{
+    display: flex;
+    align-items: center;
+    gap:1px;
+    padding: 2px 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #686868;
+    font-size: 12px;
+    margin: 0;
+}
+
+.all-activity-filter-button.active{
+  background-color: rgb(0, 0, 0, 0.3);
+}
+
+  .about-logo {
+    height: 200px;
+    width:200px;
+    object-fit: contain;
+  }
+  
+  /* Center search bar */
+  .navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-search {
+    height: 50px;
+    width: 100%;
+    max-width: 450px;
+    background-color: rgb(51, 50, 50);
+    color: white;
+    border-radius: 30px;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-search input {
+    border: none;
+    background: transparent;
+    color: white;
+    width: 100%;
+    outline: none;
+  }
+  
+  /* Right side: wallet, balance, profile */
+  .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    color: white;
+  }
+
+  
+  
+  .about-navbar-button {
+    border-radius: 8px;
+    border: none;
+    background: rgb(255, 98, 0);
+    color: #ffffff;
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .about-navbar-profile-balance {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  
+  /* Divider */
+  .navbar-divider {
+    width: 1px;
+    height: 25px;
+    background-color: #666;
+  }
+  

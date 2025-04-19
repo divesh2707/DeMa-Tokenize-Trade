@@ -1,0 +1,48 @@
+/* Dark Loader Container */
+.dark-loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #121212; /* Dark background */
+    color: #fff; /* Text color */
+    overflow: hidden;
+  }
+  
+  /* Clock Icon */
+  .clock-icon {
+    font-size: 80px;
+    color: white;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.5)); /* Glowing effect */
+    margin-bottom: 20px;
+  }
+  
+  /* Animated Bouncing Dots */
+  .dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: bounce 0.8s ease-in-out infinite;
+  }
+  
+  /* Bouncing Animation */
+  @keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  

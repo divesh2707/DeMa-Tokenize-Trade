@@ -1,0 +1,17 @@
+.nothing-search{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:20px;
+    margin: 20px auto;
+    color: white;
+}
+
+.nothing-search-heading{
+    font-size: 50px;
+}
+
+.nothing-search-para{
+    font-size: 25px;
+    color: rgb(209, 209, 209);
+}
